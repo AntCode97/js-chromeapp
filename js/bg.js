@@ -4,7 +4,8 @@ const IMG_NUMBER = 16;
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
+  image.src = `C:/Users/163898/Documents/js-chromeapp/images/${imgNumber +
+    1}.jpg`;
   image.classList.add("bgImage");
   body.prepend(image);
 }
