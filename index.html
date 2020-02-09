@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CromeApp</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="layer">
+    <div class="js-clock clock">
+      <div class="clock__time ">00:00</div>
+    </div>
+
+    <form class="js-form form showing">
+      <input type="text" class="name" placeholder="what is your name?" />
+    </form>
+
+    <h2 class="js-greetings greetings"></h2>
+
+    <form class="js-toDoForm">
+      <input
+        type="text"
+        placeholder="Add task"
+        id="addTask"
+        class="addTask"
+      />
+    </form>
+
+    <div>
+      <span class="pending js-todoList">
+      <h2>Pending</h2>
+      <ul id="pending__ul" class="lists"></ul>
+    </span>
+
+    <span class="js-finishedList finished">
+      <h2>Finished</h2>
+      <ul id="finished__ul" class="lists"></ul>
+    </span>
+  </div>
+  </div>
+    <span class="js-wheather"></span>
+    <script src="./src/clock.js"></script>
+    <script src="./src/gretting.js"></script>
+    <script src="./src/todo.js"></script>
+    <script src="./src/bg.js"></script>
+    <script src="./src/weather.js"></script>
+
+
+ </body>
+</html>
